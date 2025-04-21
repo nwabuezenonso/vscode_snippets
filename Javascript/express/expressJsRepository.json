@@ -1,0 +1,35 @@
+{
+  "Express Repository Template": {
+    "prefix": "exrepo",
+    "body": [
+      "// repositories/$1.repository.js",
+      "// You can replace this with actual DB logic",
+      "const data = [];",
+      "",
+      "exports.getAll = async () => data;",
+      "",
+      "exports.getById = async (id) => data.find(item => item.id === id);",
+      "",
+      "exports.create = async (item) => {",
+      "  item.id = data.length + 1;",
+      "  data.push(item);",
+      "  return item;",
+      "};",
+      "",
+      "exports.update = async (id, updatedItem) => {",
+      "  const index = data.findIndex(item => item.id === id);",
+      "  if (index !== -1) {",
+      "    data[index] = { ...data[index], ...updatedItem };",
+      "    return data[index];",
+      "  }",
+      "  return null;",
+      "};",
+      "",
+      "exports.remove = async (id) => {",
+      "  const index = data.findIndex(item => item.id === id);",
+      "  if (index !== -1) data.splice(index, 1);",
+      "};"
+    ],
+    "description": "Simple in-memory repository logic"
+  }
+}

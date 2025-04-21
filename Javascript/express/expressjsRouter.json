@@ -1,0 +1,19 @@
+{
+  "Express Router with Controller and Repository": {
+    "prefix": "exrouter",
+    "body": [
+      "const express = require('express');",
+      "const router = express.Router();",
+      "const entity Controller = require('../controllers/${1:entity}.controller');",
+      "",
+      "router.get('/', Controller.getAll);",
+      "router.get('/:id', Controller.getById);",
+      "router.post('/', Controller.create);",
+      "router.put('/:id', Controller.update);",
+      "router.delete('/:id', Controller.remove);",
+      "",
+      "module.exports = router;"
+    ],
+    "description": "Express Router file with standard CRUD routes"
+  }
+}

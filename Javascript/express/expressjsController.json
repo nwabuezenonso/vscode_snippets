@@ -1,0 +1,35 @@
+{
+  "Express Controller with Repository": {
+    "prefix": "excontroller",
+    "body": [
+      "// controllers/$1.controller.js",
+      "const entity Repo = require('../repositories/${entity .repository');",
+      "",
+      "exports.getAll = async (req, res) => {",
+      "  const data = await entity Repo.getAll();",
+      "  res.json(data);",
+      "};",
+      "",
+      "exports.getById = async (req, res) => {",
+      "  const data = await entity Repo.getById(req.params.id);",
+      "  res.json(data);",
+      "};",
+      "",
+      "exports.create = async (req, res) => {",
+      "  const data = await entity Repo.create(req.body);",
+      "  res.status(201).json(data);",
+      "};",
+      "",
+      "exports.update = async (req, res) => {",
+      "  const data = await entity Repo.update(req.params.id, req.body);",
+      "  res.json(data);",
+      "};",
+      "",
+      "exports.remove = async (req, res) => {",
+      "  await entity Repo.remove(req.params.id);",
+      "  res.status(204).end();",
+      "};"
+    ],
+    "description": "Controller using a repository with CRUD methods"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "Simple Async Function with error handling": {
+    "prefix": "asyncfnerr",
+    "body": [
+      "const fetchData = async (${2:params}) => {",
+      "  try {",
+      "    // your logic here",
+      "    const result = await ${3:someAsyncOperation}(${2:params});",
+      "    return result;",
+      "  } catch (error) {",
+      "    console.error('Error in fetchData:', error);",
+      "    throw error;",
+      "  }",
+      "};"
+    ],
+    "description": "Template for simple async function with error handling"
+  },
+  "Simple Async Function": {
+    "prefix": "asyncfn",
+    "body": [
+      "const fetchData = async (params) => {",
+      "    // your logic here",
+      "    const result = await someAsyncOperation(params);",
+      "    return result;",
+      "};"
+    ],
+    "description": "Template for simple async function"
+  }
+}
