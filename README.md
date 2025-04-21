@@ -4,7 +4,7 @@ A curated collection of **VS Code snippets** for every framework and language Iâ
 
 ## ðŸš€ What's Inside
 
-This repository will contains custom snippets for various technologies including:
+This repository will contain custom snippets for various technologies including:
 
 - **JavaScript / Node.js**
 - **React / React Native**
