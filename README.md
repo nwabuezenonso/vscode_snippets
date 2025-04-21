@@ -38,10 +38,8 @@ I created this repository to:
 1. Clone or download this repo.
 2. Open the snippet file you want.
 3. Copy the content into your local VS Code snippets file:
-   - `File > Preferences > User Snippets`
+   - `File > Preferences > Configure Snippets`
 4. Paste it under the appropriate language (or create a global snippet file).
-
-Alternatively, you can symlink or import these into your VS Code `snippets` folder.
 
 ## 🛠 Contribution
 
@@ -57,7 +55,3 @@ Snippets are opinionated and reflect how I structure and write code. Adjust them
 ## 📜 License
 
 MIT — use it freely, modify it, contribute, or fork it.
-
----
-
-Let me know if you want this to be more casual, professional, or if you want to include actual examples of snippets in the README too.
